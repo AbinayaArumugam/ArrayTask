@@ -148,6 +148,44 @@ public class Runner {
                 }
                 DistinctDigitArray.findDistinctDigit(arr);
                 break;
+             case 13:
+                System.out.println("Enter the arrayLength");
+                int length13=in.nextInt();
+                System.out.println("Enter the array element");
+                int[] arr13=new int[length13];
+                for(int i=0;i<length13;i++){
+                    arr13[i]=in.nextInt();
+                }
+                System.out.println("Enter the Sum Value");
+                int sum=in.nextInt();
+                int[] newArr13=ContiguousSubArrayAdd.findSubArray(arr13,sum);
+                for(int i=0;i<newArr13.length;i++) {
+                    System.out.print(newArr13[i]+" ");
+                }
+                break;
+            case 14:
+                System.out.println("Enter the arrayLength");
+                int length14=in.nextInt();
+                System.out.println("Enter the array element");
+                int[] arr14=new int[length14];
+                for(int i=0;i<length14;i++){
+                    arr14[i]=in.nextInt();
+                }
+                int len14=LocalMinima.findLocalMinima(arr14);
+                for(int i=0;i<len14;i++) {
+                    System.out.print(arr14[i]+" ");
+                }
+                break;
+            case 15:
+                System.out.println("Enter the arrayLength");
+                int length15=in.nextInt();
+                System.out.println("Enter the array element");
+                int[] arr15=new int[length15];
+                for(int i=0;i<length15;i++){
+                    arr15[i]=in.nextInt();
+                }
+                System.out.println(SingleOne.findSingleOne(arr15));
+                break;
             default:
                 System.out.println("Invalid");
                 break;
